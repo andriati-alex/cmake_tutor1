@@ -106,3 +106,7 @@ when you are starting a project you usually will take some
 time to build it the first time. Therefore, it is always
 interest to provide the `.ccls` file at least with the full
 path to the `include` dir which contain all the headers.
+The problem with only the `.ccls` for the language server
+us that some features, as `goDefinition` for example will
+open the header file instead of the source file as it would
+happen if `compile_commands.json` was provided as well.
