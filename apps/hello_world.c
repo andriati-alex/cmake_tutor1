@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "displaymsg.h"
+#include <stdlib.h>
 
 /** EXECUTABLE TO TEST THE LIB
 
@@ -12,9 +13,10 @@ int main()
 {
     char
         c,
-        msg[] = "hello world";
-    display_msg(msg);
-    c = get_indexed_char(msg, 3);
+        special_msg[] = "hello world";
+    display_msg(special_msg);
+    c = get_indexed_char(special_msg, 3);
     printf("\nThe fourth character is %c\n", c);
+    display_msg("another hello");
     return 0;
 }

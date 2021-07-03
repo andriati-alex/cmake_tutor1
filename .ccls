@@ -1,0 +1,2 @@
+%compile_commands.json
+%c -I/home/andriati/projects/cmake_example/include

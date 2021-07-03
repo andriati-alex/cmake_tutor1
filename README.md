@@ -83,3 +83,26 @@ Eventually, some command line variables can be set before
 cmake execution. For instance the compiler can be set
 for intel compiler (if installed) with
 `CC=icc cmake -S . -B build`
+
+## Additional ccls config for language server
+
+Following the setup suggested by [coc-vim github page](https://github.com/neoclide/coc.nvim/wiki/Language-servers#ccobjective-c)
+in order to a language server to work properly either the
+`compile_commands.json` or `.ccls` files must be provided
+For more details about project setup see also:
+https://github.com/MaskRay/ccls/wiki/Project-Setup
+Here I wrote an example of a `.ccls` file just to provide
+the path to the headers for every `.c` file extension. As
+can be noted, we must set the full path, therefore I used
+`/home/andriati/projects/cmake_example/include`. Set it
+appropriately depending on your project directory.
+To work with `compile_commands.json`, `cmake` must be run
+with the extra option `-DCMAKE_EXPORT_COMPILE_COMMANDS=YES`
+to produce the `json` file. For instance:
+`cmake -S . -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=YES`
+and then copy the file `compile_commands.json` from `build`
+dir to project root dir. I prefer this second approach, but
+when you are starting a project you usually will take some
+time to build it the first time. Therefore, it is always
+interest to provide the `.ccls` file at least with the full
+path to the `include` dir which contain all the headers.
