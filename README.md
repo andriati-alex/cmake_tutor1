@@ -67,4 +67,19 @@ Finally, once all libs are created, the executables can be defined with:
 where the seconf command make explicit the executable dependency of the
 lib indicated by `target`
 
-Finally, go ahead and see the `CMakeLists.txt`.
+Finally, go ahead and see the `CMakeLists.txt` for more details.
+
+## Building the application
+
+To produce the executables, we just need to run first
+`cmake -S . -B build`
+where the `-S` indicate the source dir and `-B` where the
+build files must be placed. In this step the makefile is
+generated (that is it, no need to hard code makefiles).
+Finally to really compile the executable run
+`cmake --build build`
+which will produce the executable in `build` directory.
+Eventually, some command line variables can be set before
+cmake execution. For instance the compiler can be set
+for intel compiler (if installed) with
+`CC=icc cmake -S . -B build`
