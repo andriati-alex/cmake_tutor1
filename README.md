@@ -3,8 +3,8 @@
 In this dummy (but rather illustrative) project I intent to provide a basic
 usage introduction to cmake tool. The main sources I followed in this first
 moment were:
-    - https://cliutils.gitlab.io/modern-cmake/
-    - https://www.youtube.com/watch?v=mKZ-i-UfGgQ
+* https://cliutils.gitlab.io/modern-cmake
+* https://www.youtube.com/watch?v=mKZ-i-UfGgQ
 
 ## Goal of this small dummy example
 
