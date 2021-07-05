@@ -2,12 +2,11 @@
 #include "displaymsg.h"
 #include <stdlib.h>
 
-/** EXECUTABLE TO TEST THE LIB
-
-This simple executable only test the two functions implemented
-in file `src/displaymsg.c` with the input string "hello world"
-
-**/
+/*! EXECUTABLE TO TEST THE LIB
+ *
+ * This simple executable only test the two functions implemented
+ * in file `src/displaymsg.c` with the input string "hello world"
+ */
 
 int main()
 {

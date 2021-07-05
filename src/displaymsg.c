@@ -5,7 +5,7 @@
 
 void display_msg(msg s)
 {
-    /** Dummy function to print on screen - only to use `msg` datatype **/
+    /** Dummy function to print on screen **/
     printf("Using function display_msg : ");
     printf("%s", s);
 }

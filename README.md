@@ -110,3 +110,8 @@ The problem with only the `.ccls` for the language server
 us that some features, as `goDefinition` for example will
 open the header file instead of the source file as it would
 happen if `compile_commands.json` was provided as well.
+
+## doxygen documentation standards
+
+In the header files I provided function documentation following the doxygen
+standards, which may be usefull for exporting the documentation afterwards.
