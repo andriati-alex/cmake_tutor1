@@ -115,3 +115,4 @@ happen if `compile_commands.json` was provided as well.
 
 In the header files I provided function documentation following the doxygen
 standards, which may be usefull for exporting the documentation afterwards.
+See https://www.doxygen.nl/index.html
