@@ -1,5 +1,6 @@
 # Hands on example of cmake
 
+
 In this dummy (but rather illustrative) project I intent to provide a basic
 usage introduction to cmake tool. The main sources I followed in this first
 moment were:
